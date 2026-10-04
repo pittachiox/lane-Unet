@@ -36,13 +36,13 @@ Rationale:
 | Stage | Operation | Out shape (C×H×W) | Params |
 |---|---|---|---|
 | Input | RGB image | 3×48×48 | – |
-| Enc1 | ConvBlock 3→16 | 16×48×48 | 2.6K |
-| Enc2 | MaxPool + ConvBlock 16→32 | 32×24×24 | 14K |
-| Enc3 | MaxPool + ConvBlock 32→64 | 64×12×12 | 55K |
-| Bottleneck | MaxPool + ConvBlock 64→128 | 128×6×6 | 221K |
-| Dec3 | ConvTranspose 128→64, concat Enc3, ConvBlock 128→64 | 64×12×12 | 115K |
-| Dec2 | ConvTranspose 64→32, concat Enc2, ConvBlock 64→32 | 32×24×24 | 29K |
-| Dec1 | ConvTranspose 32→16, concat Enc1, ConvBlock 32→16 | 16×48×48 | 7K |
+| Enc1 | ConvBlock 3→16 | 16×48×48 | 2.8K |
+| Enc2 | MaxPool + ConvBlock 16→32 | 32×24×24 | 14.0K |
+| Enc3 | MaxPool + ConvBlock 32→64 | 64×12×12 | 55.6K |
+| Bottleneck | MaxPool + ConvBlock 64→128 | 128×6×6 | 221.7K |
+| Dec3 | ConvTranspose 128→64, concat Enc3, ConvBlock 128→64 | 64×12×12 | 143.7K |
+| Dec2 | ConvTranspose 64→32, concat Enc2, ConvBlock 64→32 | 32×24×24 | 36.0K |
+| Dec1 | ConvTranspose 32→16, concat Enc1, ConvBlock 32→16 | 16×48×48 | 9.0K |
 | Head | Conv 1×1, 16→1 | 1×48×48 | 17 |
 
 Total: **482,737** parameters, all trainable.
