@@ -5,12 +5,63 @@ Single-class lane segmentation on the PSU-reservoir dataset (YOLO-seg polygons, 
 ## 1. Network design
 Full diagram: [custom-unet-architecture.md](custom-unet-architecture.md). 3-level U-Net, input `3×48×48`, output `1×48×48`, **482,737 params**, no pretrained weights (Kaiming default init, BatchNorm).
 
+```mermaid
+flowchart TD
+    IN["Input 3×48×48"] --> E1["Enc1: ConvBlock 3→16 (16×48×48)"]
+    E1 --> P1["MaxPool 2×2"] --> E2["Enc2: ConvBlock 16→32 (32×24×24)"]
+    E2 --> P2["MaxPool 2×2"] --> E3["Enc3: ConvBlock 32→64 (64×12×12)"]
+    E3 --> P3["MaxPool 2×2"] --> B["Bottleneck: ConvBlock 64→128 (128×6×6)"]
+    B --> U3["ConvTranspose 2×2, 128→64 (64×12×12)"]
+    U3 --> D3["Concat Enc3 → ConvBlock 128→64"]
+    D3 --> U2["ConvTranspose 2×2, 64→32 (32×24×24)"]
+    U2 --> D2["Concat Enc2 → ConvBlock 64→32"]
+    D2 --> U1["ConvTranspose 2×2, 32→16 (16×48×48)"]
+    U1 --> D1["Concat Enc1 → ConvBlock 32→16"]
+    D1 --> H["Conv 1×1, 16→1 (1×48×48)"]
+    H --> OUT["Sigmoid > 0.5 → Binary mask 48×48"]
+    E1 -. skip .-> D1
+    E2 -. skip .-> D2
+    E3 -. skip .-> D3
+```
+
 Rationale:
 - **3 levels (48→24→12→6):** 48 halves cleanly three times, so skip connections align without padding. A 4th level would shrink the map to 3×3, which is too small for such a small image.
 - **Channels 16→128:** small enough for a laptop (~1.8 MB of weights) but enough capacity for a single class.
 - **Skip connections:** recover the lane boundary positions lost by pooling.
 - **BatchNorm:** gives stable training from scratch with batch size 4.
 - **Loss = 0.5·BCE + 0.5·Dice:** BCE gives stable gradients, Dice directly optimises overlap.
+
+
+### Layer specification
+| Stage | Operation | Out shape (C×H×W) | Params |
+|---|---|---|---|
+| Input | RGB image | 3×48×48 | – |
+| Enc1 | ConvBlock 3→16 | 16×48×48 | 2.6K |
+| Enc2 | MaxPool + ConvBlock 16→32 | 32×24×24 | 14K |
+| Enc3 | MaxPool + ConvBlock 32→64 | 64×12×12 | 55K |
+| Bottleneck | MaxPool + ConvBlock 64→128 | 128×6×6 | 221K |
+| Dec3 | ConvTranspose 128→64, concat Enc3, ConvBlock 128→64 | 64×12×12 | 115K |
+| Dec2 | ConvTranspose 64→32, concat Enc2, ConvBlock 64→32 | 32×24×24 | 29K |
+| Dec1 | ConvTranspose 32→16, concat Enc1, ConvBlock 32→16 | 16×48×48 | 7K |
+| Head | Conv 1×1, 16→1 | 1×48×48 | 17 |
+
+Total: **482,737** parameters, all trainable.
+
+### Project structure
+```
+lane-unet/
+├── model.py                      # LaneUNet
+├── dataset.py                    # YOLO-seg polygon -> mask, augmentation
+├── train.py                      # training + TensorBoard
+├── inference.py                  # masks -> run/
+├── evaluation.py                 # IoU + detection rate
+├── report_assets.py              # loss curve, snapshot, memory
+├── custom-unet-architecture.md   # mermaid diagram
+├── checkpoints/best.pt           # trained weights
+├── run/                          # predicted test masks
+├── assets/                       # loss_curve.png, inference_example.png
+├── evaluation_results.json, memory_footprint.json, train.log
+```
 
 ## 2. Data & training
 - Images of any size are accepted. Polygons are rasterised at the image's own resolution and then resized to 48×48 (nearest for masks, area for images).
