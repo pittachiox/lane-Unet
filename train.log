@@ -1,0 +1,32 @@
+device: mps
+epoch 01 train_loss 0.2174 val_loss 0.0948 train_iou 0.9338 val_iou 0.9707
+epoch 02 train_loss 0.0686 val_loss 0.0479 train_iou 0.9689 val_iou 0.9717
+epoch 03 train_loss 0.0482 val_loss 0.0318 train_iou 0.9690 val_iou 0.9790
+epoch 04 train_loss 0.0408 val_loss 0.0402 train_iou 0.9715 val_iou 0.9694
+epoch 05 train_loss 0.0373 val_loss 0.0253 train_iou 0.9732 val_iou 0.9807
+epoch 06 train_loss 0.0377 val_loss 0.0432 train_iou 0.9719 val_iou 0.9621
+epoch 07 train_loss 0.0367 val_loss 0.0248 train_iou 0.9722 val_iou 0.9800
+epoch 08 train_loss 0.0344 val_loss 0.0239 train_iou 0.9736 val_iou 0.9794
+epoch 09 train_loss 0.0344 val_loss 0.0225 train_iou 0.9732 val_iou 0.9799
+epoch 10 train_loss 0.0335 val_loss 0.0230 train_iou 0.9738 val_iou 0.9799
+epoch 11 train_loss 0.0330 val_loss 0.0204 train_iou 0.9740 val_iou 0.9821
+epoch 12 train_loss 0.0326 val_loss 0.0261 train_iou 0.9739 val_iou 0.9770
+epoch 13 train_loss 0.0317 val_loss 0.0214 train_iou 0.9744 val_iou 0.9815
+epoch 14 train_loss 0.0311 val_loss 0.0197 train_iou 0.9748 val_iou 0.9821
+epoch 15 train_loss 0.0296 val_loss 0.0213 train_iou 0.9753 val_iou 0.9812
+epoch 16 train_loss 0.0294 val_loss 0.0192 train_iou 0.9753 val_iou 0.9814
+epoch 17 train_loss 0.0294 val_loss 0.0191 train_iou 0.9751 val_iou 0.9817
+epoch 18 train_loss 0.0290 val_loss 0.0193 train_iou 0.9743 val_iou 0.9821
+epoch 19 train_loss 0.0279 val_loss 0.0234 train_iou 0.9755 val_iou 0.9786
+epoch 20 train_loss 0.0276 val_loss 0.0181 train_iou 0.9757 val_iou 0.9824
+epoch 21 train_loss 0.0275 val_loss 0.0201 train_iou 0.9753 val_iou 0.9817
+epoch 22 train_loss 0.0255 val_loss 0.0224 train_iou 0.9765 val_iou 0.9792
+epoch 23 train_loss 0.0247 val_loss 0.0190 train_iou 0.9760 val_iou 0.9819
+epoch 24 train_loss 0.0238 val_loss 0.0183 train_iou 0.9776 val_iou 0.9824
+epoch 25 train_loss 0.0220 val_loss 0.0184 train_iou 0.9781 val_iou 0.9818
+epoch 26 train_loss 0.0232 val_loss 0.0190 train_iou 0.9772 val_iou 0.9827
+epoch 27 train_loss 0.0211 val_loss 0.0201 train_iou 0.9786 val_iou 0.9810
+epoch 28 train_loss 0.0193 val_loss 0.0198 train_iou 0.9799 val_iou 0.9810
+epoch 29 train_loss 0.0198 val_loss 0.0269 train_iou 0.9801 val_iou 0.9741
+epoch 30 train_loss 0.0183 val_loss 0.0306 train_iou 0.9810 val_iou 0.9710
+best val_loss 0.018050892036408184

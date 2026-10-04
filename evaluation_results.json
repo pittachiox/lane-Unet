@@ -1,0 +1,512 @@
+{
+  "summary": {
+    "num_images": 100,
+    "iou_threshold": 0.6,
+    "detected": 99,
+    "detection_rate": 0.99,
+    "mean_iou_detected": 0.9373934968516621,
+    "mean_iou_all": 0.9339902400530938
+  },
+  "per_image": [
+    {
+      "image": "frame_0901",
+      "iou": 0.972366724272543,
+      "detected": true
+    },
+    {
+      "image": "frame_0902",
+      "iou": 0.9695033853020543,
+      "detected": true
+    },
+    {
+      "image": "frame_0903",
+      "iou": 0.9662529092319627,
+      "detected": true
+    },
+    {
+      "image": "frame_0904",
+      "iou": 0.9645215430374743,
+      "detected": true
+    },
+    {
+      "image": "frame_0905",
+      "iou": 0.9647833820268771,
+      "detected": true
+    },
+    {
+      "image": "frame_0906",
+      "iou": 0.9682157366898926,
+      "detected": true
+    },
+    {
+      "image": "frame_0907",
+      "iou": 0.972008478442621,
+      "detected": true
+    },
+    {
+      "image": "frame_0908",
+      "iou": 0.9652421302636899,
+      "detected": true
+    },
+    {
+      "image": "frame_0909",
+      "iou": 0.821724337306529,
+      "detected": true
+    },
+    {
+      "image": "frame_0910",
+      "iou": 0.8784688541183417,
+      "detected": true
+    },
+    {
+      "image": "frame_0911",
+      "iou": 0.8676155160026212,
+      "detected": true
+    },
+    {
+      "image": "frame_0912",
+      "iou": 0.7766427991005207,
+      "detected": true
+    },
+    {
+      "image": "frame_0913",
+      "iou": 0.8391796660376006,
+      "detected": true
+    },
+    {
+      "image": "frame_0914",
+      "iou": 0.8863661386507268,
+      "detected": true
+    },
+    {
+      "image": "frame_0915",
+      "iou": 0.8444724786887631,
+      "detected": true
+    },
+    {
+      "image": "frame_0916",
+      "iou": 0.8015229089236539,
+      "detected": true
+    },
+    {
+      "image": "frame_0917",
+      "iou": 0.960630264843012,
+      "detected": true
+    },
+    {
+      "image": "frame_0918",
+      "iou": 0.9736562461914771,
+      "detected": true
+    },
+    {
+      "image": "frame_0919",
+      "iou": 0.9755542734690513,
+      "detected": true
+    },
+    {
+      "image": "frame_0920",
+      "iou": 0.9643952281828845,
+      "detected": true
+    },
+    {
+      "image": "frame_0921",
+      "iou": 0.7498138221871996,
+      "detected": true
+    },
+    {
+      "image": "frame_0922",
+      "iou": 0.9740810898641946,
+      "detected": true
+    },
+    {
+      "image": "frame_0923",
+      "iou": 0.9647628680509209,
+      "detected": true
+    },
+    {
+      "image": "frame_0924",
+      "iou": 0.9664740825128163,
+      "detected": true
+    },
+    {
+      "image": "frame_0925",
+      "iou": 0.969427206175793,
+      "detected": true
+    },
+    {
+      "image": "frame_0926",
+      "iou": 0.9642369904334367,
+      "detected": true
+    },
+    {
+      "image": "frame_0927",
+      "iou": 0.7133460309969071,
+      "detected": true
+    },
+    {
+      "image": "frame_0928",
+      "iou": 0.9377153662694412,
+      "detected": true
+    },
+    {
+      "image": "frame_0929",
+      "iou": 0.9574506443680089,
+      "detected": true
+    },
+    {
+      "image": "frame_0930",
+      "iou": 0.9526248066390108,
+      "detected": true
+    },
+    {
+      "image": "frame_0931",
+      "iou": 0.9750979566723875,
+      "detected": true
+    },
+    {
+      "image": "frame_0932",
+      "iou": 0.7959853713053197,
+      "detected": true
+    },
+    {
+      "image": "frame_0933",
+      "iou": 0.9725761843355504,
+      "detected": true
+    },
+    {
+      "image": "frame_0934",
+      "iou": 0.978891603245378,
+      "detected": true
+    },
+    {
+      "image": "frame_0935",
+      "iou": 0.9676845083950725,
+      "detected": true
+    },
+    {
+      "image": "frame_0936",
+      "iou": 0.9784652107996517,
+      "detected": true
+    },
+    {
+      "image": "frame_0937",
+      "iou": 0.974652903369411,
+      "detected": true
+    },
+    {
+      "image": "frame_0938",
+      "iou": 0.9784000222569869,
+      "detected": true
+    },
+    {
+      "image": "frame_0939",
+      "iou": 0.9682291191038402,
+      "detected": true
+    },
+    {
+      "image": "frame_0940",
+      "iou": 0.9683759348989549,
+      "detected": true
+    },
+    {
+      "image": "frame_0941",
+      "iou": 0.9706720749582322,
+      "detected": true
+    },
+    {
+      "image": "frame_0942",
+      "iou": 0.9673294822666642,
+      "detected": true
+    },
+    {
+      "image": "frame_0943",
+      "iou": 0.9693094252950856,
+      "detected": true
+    },
+    {
+      "image": "frame_0944",
+      "iou": 0.9664917421532114,
+      "detected": true
+    },
+    {
+      "image": "frame_0945",
+      "iou": 0.9725450000745828,
+      "detected": true
+    },
+    {
+      "image": "frame_0946",
+      "iou": 0.9709980688015959,
+      "detected": true
+    },
+    {
+      "image": "frame_0947",
+      "iou": 0.9758664196371685,
+      "detected": true
+    },
+    {
+      "image": "frame_0948",
+      "iou": 0.9738575050517408,
+      "detected": true
+    },
+    {
+      "image": "frame_0949",
+      "iou": 0.9652356012100409,
+      "detected": true
+    },
+    {
+      "image": "frame_0950",
+      "iou": 0.9600636538606282,
+      "detected": true
+    },
+    {
+      "image": "frame_0951",
+      "iou": 0.966658175778232,
+      "detected": true
+    },
+    {
+      "image": "frame_0952",
+      "iou": 0.9511881730090215,
+      "detected": true
+    },
+    {
+      "image": "frame_0953",
+      "iou": 0.9344090458209341,
+      "detected": true
+    },
+    {
+      "image": "frame_0954",
+      "iou": 0.9338712301135439,
+      "detected": true
+    },
+    {
+      "image": "frame_0955",
+      "iou": 0.9401268062268798,
+      "detected": true
+    },
+    {
+      "image": "frame_0956",
+      "iou": 0.9334939624736602,
+      "detected": true
+    },
+    {
+      "image": "frame_0957",
+      "iou": 0.9395862567722768,
+      "detected": true
+    },
+    {
+      "image": "frame_0958",
+      "iou": 0.8964207121347496,
+      "detected": true
+    },
+    {
+      "image": "frame_0959",
+      "iou": 0.8494901721083216,
+      "detected": true
+    },
+    {
+      "image": "frame_0960",
+      "iou": 0.5970678169948563,
+      "detected": false
+    },
+    {
+      "image": "frame_0961",
+      "iou": 0.8047234583853324,
+      "detected": true
+    },
+    {
+      "image": "frame_0962",
+      "iou": 0.9011936841877428,
+      "detected": true
+    },
+    {
+      "image": "frame_0963",
+      "iou": 0.9749086824444818,
+      "detected": true
+    },
+    {
+      "image": "frame_0964",
+      "iou": 0.9667635364768966,
+      "detected": true
+    },
+    {
+      "image": "frame_0965",
+      "iou": 0.9744200298367645,
+      "detected": true
+    },
+    {
+      "image": "frame_0966",
+      "iou": 0.9751060340208674,
+      "detected": true
+    },
+    {
+      "image": "frame_0967",
+      "iou": 0.9722958747186204,
+      "detected": true
+    },
+    {
+      "image": "frame_0968",
+      "iou": 0.9667029276829211,
+      "detected": true
+    },
+    {
+      "image": "frame_0969",
+      "iou": 0.9683044066674868,
+      "detected": true
+    },
+    {
+      "image": "frame_0970",
+      "iou": 0.9741348323687865,
+      "detected": true
+    },
+    {
+      "image": "frame_0971",
+      "iou": 0.9653146788547818,
+      "detected": true
+    },
+    {
+      "image": "frame_0972",
+      "iou": 0.9745085128398081,
+      "detected": true
+    },
+    {
+      "image": "frame_0973",
+      "iou": 0.9627918722969916,
+      "detected": true
+    },
+    {
+      "image": "frame_0974",
+      "iou": 0.9655911376518551,
+      "detected": true
+    },
+    {
+      "image": "frame_0975",
+      "iou": 0.9669565572015538,
+      "detected": true
+    },
+    {
+      "image": "frame_0976",
+      "iou": 0.9769725378868367,
+      "detected": true
+    },
+    {
+      "image": "frame_0977",
+      "iou": 0.9763449798997469,
+      "detected": true
+    },
+    {
+      "image": "frame_0978",
+      "iou": 0.9731890454550408,
+      "detected": true
+    },
+    {
+      "image": "frame_0979",
+      "iou": 0.9760549791957975,
+      "detected": true
+    },
+    {
+      "image": "frame_0980",
+      "iou": 0.9659973856633676,
+      "detected": true
+    },
+    {
+      "image": "frame_0981",
+      "iou": 0.970851284346154,
+      "detected": true
+    },
+    {
+      "image": "frame_0982",
+      "iou": 0.9716115343320211,
+      "detected": true
+    },
+    {
+      "image": "frame_0983",
+      "iou": 0.9619057106783122,
+      "detected": true
+    },
+    {
+      "image": "frame_0984",
+      "iou": 0.9536058436245395,
+      "detected": true
+    },
+    {
+      "image": "frame_0985",
+      "iou": 0.9410883835612902,
+      "detected": true
+    },
+    {
+      "image": "frame_0986",
+      "iou": 0.895272267387852,
+      "detected": true
+    },
+    {
+      "image": "frame_0987",
+      "iou": 0.7942946839416937,
+      "detected": true
+    },
+    {
+      "image": "frame_0988",
+      "iou": 0.7799636504508662,
+      "detected": true
+    },
+    {
+      "image": "frame_0989",
+      "iou": 0.7073867558027175,
+      "detected": true
+    },
+    {
+      "image": "frame_0990",
+      "iou": 0.8855305515844039,
+      "detected": true
+    },
+    {
+      "image": "frame_0991",
+      "iou": 0.9775411153372261,
+      "detected": true
+    },
+    {
+      "image": "frame_0992",
+      "iou": 0.9766376194124523,
+      "detected": true
+    },
+    {
+      "image": "frame_0993",
+      "iou": 0.9700372022719136,
+      "detected": true
+    },
+    {
+      "image": "frame_0994",
+      "iou": 0.9699167856361977,
+      "detected": true
+    },
+    {
+      "image": "frame_0995",
+      "iou": 0.9689337569025436,
+      "detected": true
+    },
+    {
+      "image": "frame_0996",
+      "iou": 0.9630185730727401,
+      "detected": true
+    },
+    {
+      "image": "frame_0997",
+      "iou": 0.9610768574121107,
+      "detected": true
+    },
+    {
+      "image": "frame_0998",
+      "iou": 0.9688282037028755,
+      "detected": true
+    },
+    {
+      "image": "frame_0999",
+      "iou": 0.9609879421884009,
+      "detected": true
+    },
+    {
+      "image": "frame_1000",
+      "iou": 0.9621640825234096,
+      "detected": true
+    }
+  ]
+}

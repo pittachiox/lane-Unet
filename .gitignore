@@ -1,0 +1,6 @@
+__pycache__/
+*.pyc
+runs/
+run/
+checkpoints/*.pt
+!checkpoints/best.pt

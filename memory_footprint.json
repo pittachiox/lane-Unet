@@ -1,0 +1,8 @@
+{
+  "params": 482737,
+  "weights_fp32_MB": 1.841,
+  "state_dict_file_MB": 1.869,
+  "activation_sum_MB_batch1": 1.028,
+  "cpu_latency_ms_per_48x48": 1.12,
+  "process_peak_RSS_MB": 370.9
+}
